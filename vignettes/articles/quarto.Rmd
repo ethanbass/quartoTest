@@ -1,0 +1,20 @@
+---
+title: "quarto"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(quartoTest)
+library(rdryad)
+```
+
+```{r}
+data("AirPassengers")
+head(AirPassengers)
+```
