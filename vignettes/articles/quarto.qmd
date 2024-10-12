@@ -13,7 +13,6 @@ knitr::opts_chunk$set(
 ```
 
 ```{r setup}
-library(chromatographR)
 library(rdryad)
 library(vegan)
 library(ggplot2)
@@ -28,10 +27,8 @@ To demonstrate the use of `chromatographR` for the analysis GC-FID data, we will
 ```{r download_data}
 # load chromatograms from Legan et al 2022
 files <- rdryad::dryad_download("10.5061/dryad.wpzgmsbr8")[[1]]
-chrom_paths <- grep("README|METADATA|ANNOTATED", files, invert = TRUE, value = TRUE)
-dat <- read_chroms(chrom_paths, format_in = "shimadzu_fid")
 
-# load metadata
 path_to_metadata <- grep("METADATA", files, value = TRUE)
 meta <- read.csv(path_to_metadata, sep = "\t")
+head(meta)
 ```
