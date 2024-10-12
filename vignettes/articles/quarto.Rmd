@@ -18,3 +18,9 @@ library(rdryad)
 data("AirPassengers")
 head(AirPassengers)
 ```
+
+```{r download_data}
+# load chromatograms from Legan et al 2022
+files <- rdryad::dryad_download("10.5061/dryad.wpzgmsbr8")[[1]]
+head(readLines(files[[1]]))
+```
