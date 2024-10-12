@@ -33,7 +33,7 @@ rdryad::dryad_set_cache(rdryad_cache)
 print(rdryad::dryad_get_cache())
 ```
 
-```{r,e val=FALSE}
+```{r, eval=FALSE}
 # load chromatograms from Legan et al 2022
 files <- rdryad::dryad_download("10.5061/dryad.wpzgmsbr8")[[1]]
 
