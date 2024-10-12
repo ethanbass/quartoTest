@@ -4,7 +4,7 @@ description: >
   Learn how quarto vignettes work with pkgdown, including currently supported
   features and known limitations.
 vignette: >
-  %\VignetteIndexEntry{quarto vignettes}
+  %\VignetteIndexEntry{quarto}
   %\VignetteEngine{quarto::html}
   %\VignetteEncoding{UTF-8}
 knitr:
@@ -13,8 +13,7 @@ knitr:
     comment: '#>'
 ---
 
-```{r setup}
-library(vegan)
-library(ggplot2)
+```{r}
+data("volcano")
+head(volcano)
 ```
-
