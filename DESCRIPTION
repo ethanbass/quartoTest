@@ -13,4 +13,5 @@ VignetteBuilder:
     knitr,
     quarto
 Config/Needs/website: rmarkdown, quarto, ropensci/rdryad, vegan, ggplot2
+Config/testthat/start-first: build-article, build-quarto-article, build-reference
 URL: https://ethanbass.github.io/quartoTest/
