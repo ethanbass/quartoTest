@@ -10,3 +10,4 @@ License: What license is it under?
 Encoding: UTF-8
 LazyData: true
 Config/Needs/website: rmarkdown, quarto, rdryad
+URL: https://ethanbass.github.io/quartoTest/
