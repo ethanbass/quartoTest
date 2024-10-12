@@ -70,6 +70,15 @@
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="st">"AirPassengers"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">AirPassengers</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] 112 118 132 129 121 135</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># load chromatograms from Legan et al 2022</span></span>
+<span><span class="va">files</span> <span class="op">&lt;-</span> <span class="fu">rdryad</span><span class="fu">::</span><span class="fu"><a href="https://docs.ropensci.org/rdryad/reference/dryad_download.html" class="external-link">dryad_download</a></span><span class="op">(</span><span class="st">"10.5061/dryad.wpzgmsbr8"</span><span class="op">)</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/readLines.html" class="external-link">readLines</a></span><span class="op">(</span><span class="va">files</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="co">#&gt; Warning in readLines(files[[1]]): incomplete final line found on</span></span>
+<span><span class="co">#&gt; '/home/runner/.cache/R/rdryad/10_5061_dryad_wpzgmsbr8/ALKANE_LADDER_ANNOTATED.txt'</span></span>
+<span><span class="co">#&gt; [1] "RT\tArea\tHeight\tName"      "3.584\t1166762\t360507\tC9" </span></span>
+<span><span class="co">#&gt; [3] "4.182\t1416412\t399916\tC10" "4.885\t1825014\t523927\tC11"</span></span>
+<span><span class="co">#&gt; [5] "5.73\t1520983\t433521\tC12"  "6.777\t1531464\t419522\tC13"</span></span></code></pre></div>
   </main>
 </div>
 
