@@ -9,5 +9,8 @@ Description: More about what it does (maybe more than one line)
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
+VignetteBuilder:
+    knitr,
+    quarto
 Config/Needs/website: rmarkdown, quarto, ropensci/rdryad, vegan, ggplot2
 URL: https://ethanbass.github.io/quartoTest/
