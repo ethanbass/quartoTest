@@ -3,6 +3,8 @@ title: quarto article
 description: > 
   Learn how quarto vignettes work with pkgdown, including currently supported
   features and known limitations.
+format:
+  html
 knitr:
   opts_chunk: 
     collapse: true
