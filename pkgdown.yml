@@ -1,9 +1,10 @@
 pandoc: 3.1.11
-pkgdown: 2.1.1
-pkgdown_sha: ~
+pkgdown: 2.1.1.9000
+pkgdown_sha: 8b10575ae7835cd4cbccff12b675a192e6bb84a0
 articles:
+  articles/quarto_article: quarto_article.html
   quarto: quarto.html
-last_built: 2024-10-13T01:07Z
+last_built: 2024-10-13T18:08Z
 urls:
   reference: https://ethanbass.github.io/quartoTest/reference
   article: https://ethanbass.github.io/quartoTest/articles
